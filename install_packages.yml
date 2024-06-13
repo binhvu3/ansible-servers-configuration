@@ -1,0 +1,29 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Update Repository Index
+    apt:
+      update_cache: yes
+
+  - name: Install Apache2 Package
+    apt:
+      name: apache2
+      state: latest
+
+  - name: Install Tmux
+    apt:
+      name: tmux
+      state: latest
+
+  - name: Add PHP Support for Apache2
+    apt:
+      name: libapache2-mod-php
+      state: latest
+
+  - name: Install NeoVim
+    apt:
+      name: neovim
+      state: latest

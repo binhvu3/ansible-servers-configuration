@@ -1,0 +1,25 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Remove Apache2 Package
+    apt:
+      name: apache2
+      state: absent
+
+  - name: Remove Tmux
+    apt:
+      name: tmux
+      state: absent 
+
+  - name: Remove PHP Support for Apache2
+    apt:
+      name: libapache2-mod-php
+      state: absent
+
+  - name: Remove NeoVim
+    apt:
+      name: neovim
+      state: absent
