@@ -3,4 +3,7 @@ ansible all -m ping # ssh connection and return status
 ansible all --list-hosts  # List of all the reachable server
 ansible all -m gather_facts # Facts about the server
 ansible all -m gather_facts --limit ###.###.###.###
-
+# Enter password to become sudo for apt update command
+ansible all -m apt -a update_cache=true --become --ask-become-pass 
+ansible all -m apt -a name=neovim --become --ask-become-pass # Install neovim on all server
+ansible all -m apt -a "upgrade=dist" --become --ask-become-pass # Similar to sudo apt dist-upgrade
