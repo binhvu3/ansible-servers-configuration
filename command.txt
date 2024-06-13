@@ -1,0 +1,4 @@
+# Need to configured the ansible.cfg file
+ansible all -m ping # ssh connection and return status
+ansible all --list-hosts  # List of all the reachable server
+
