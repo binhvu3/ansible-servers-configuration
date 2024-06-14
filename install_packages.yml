@@ -7,23 +7,28 @@
   - name: Update Repository Index
     apt:
       update_cache: yes
+    when: ansible_distribution == "Ubuntu"
 
   - name: Install Apache2 Package
     apt:
       name: apache2
       state: latest
+    when: ansible_distribution == "Ubuntu"
 
   - name: Install Tmux
     apt:
       name: tmux
       state: latest
+    when: ansible_distribution == "Ubuntu"
 
   - name: Add PHP Support for Apache2
     apt:
       name: libapache2-mod-php
       state: latest
+    when: ansible_distribution == "Ubuntu"
 
   - name: Install NeoVim
     apt:
       name: neovim
       state: latest
+    when: ansible_distribution == "Ubuntu"
