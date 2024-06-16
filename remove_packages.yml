@@ -1,29 +1,15 @@
----
+-j-
 
 - hosts: all
   become: true
   tasks:
 
-  - name: Remove Apache2 Package
+  - name: Remove Packages
     apt:
-      name: apache2
-      state: absent
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Remove Tmux
-    apt:
-      name: tmux
+      name: 
+        - apache2
+        - tmux
+        - libapache2-mod-php
+        - neovim
       state: absent 
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Remove PHP Support for Apache2
-    apt:
-      name: libapache2-mod-php
-      state: absent
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Remove NeoVim
-    apt:
-      name: neovim
-      state: absent
     when: ansible_distribution == "Ubuntu"

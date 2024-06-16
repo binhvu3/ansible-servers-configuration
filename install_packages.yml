@@ -4,31 +4,13 @@
   become: true
   tasks:
 
-  - name: Update Repository Index
+  - name: Install Packages
     apt:
+      name: 
+        - apache2
+        - tmux
+        - libapache2-mod-php
+        - neovim
+      state: latest
       update_cache: yes
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Install Apache2 Package
-    apt:
-      name: apache2
-      state: latest
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Install Tmux
-    apt:
-      name: tmux
-      state: latest
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Add PHP Support for Apache2
-    apt:
-      name: libapache2-mod-php
-      state: latest
-    when: ansible_distribution == "Ubuntu"
-
-  - name: Install NeoVim
-    apt:
-      name: neovim
-      state: latest
     when: ansible_distribution == "Ubuntu"
