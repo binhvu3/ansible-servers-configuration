@@ -1,0 +1,38 @@
+---
+
+- hosts: all
+  become: true
+  pre_tasks:
+    - name: Install Update
+      package:
+        upgrade: dist
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+
+- hosts: server1
+  become: true
+  tasks:
+  - name: Server 1 -> Install Packages
+    package:
+      name: 
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+        - "{{ tmux_package }}"
+        - "{{ vim_package }}"
+      state: latest
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+- hosts: server2
+  become: true
+  tasks:
+  - name: Server 2 -> Install Packages
+    package:
+      name: 
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+        - "{{ tmux_package }}"
+        - "{{ vim_package }}"
+      state: latest
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
