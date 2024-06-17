@@ -1,15 +1,15 @@
--j-
+---
 
 - hosts: all
   become: true
   tasks:
 
   - name: Remove Packages
-    apt:
+    package:
       name: 
-        - apache2
-        - tmux
-        - libapache2-mod-php
-        - neovim
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
+        - "{{ tmux_package }}"
+        - "{{ vim_package }}"
       state: absent 
     when: ansible_distribution == "Ubuntu"
