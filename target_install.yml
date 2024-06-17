@@ -1,4 +1,4 @@
----
+
 
 - hosts: all
   become: true
@@ -9,6 +9,7 @@
         upgrade: dist
         update_cache: yes
       when: ansible_distribution == "Ubuntu"
+
 
 - hosts: server1
   become: true
@@ -25,6 +26,14 @@
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
 
+  - name: Change Email address for Admin
+    tags: apache, ubuntu 
+    lineinfile: 
+      path: /home/binh/test.conf
+      regexp: '\b[A-Za-z0-9._%+-]+@gmail\.com\b'
+      line: admin@adminmail.com
+    when: ansible_distribution == "Ubuntu"
+
 - hosts: server2
   become: true
   tasks:
@@ -39,3 +48,4 @@
       state: latest
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
+
