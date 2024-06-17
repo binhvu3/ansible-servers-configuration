@@ -1,0 +1,16 @@
+---
+
+- name: Move File to Servers
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Copying html file to server
+      tags: html, file, copy
+      copy:
+        src: "{{ siteFile }}"
+        dest: "{{ destination }}"
+        owner: root
+        group: root
+        mode: 0644
+
