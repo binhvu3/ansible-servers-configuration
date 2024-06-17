@@ -1,6 +1,9 @@
 # IP addr for VM not static !!!
 [server1]
-binh@192.168.0.137 apache_package=apache2 php_package=libapache2-mod-php tmux_package=tmux vim_package=neovim siteFile=default_site.html destination=/var/www/html/index.html
+binh@192.168.1.212 apache_package=apache2 php_package=libapache2-mod-php tmux_package=tmux vim_package=neovim siteFile=default_site.html destination=/var/www/html/index.html
 
 [server2]
-binh@192.168.0.219 apache_package=apache2 php_package=libapache2-mod-php tmux_package=tmux vim_package=neovim siteFile=default_site.html destination=/var/www/html/index.html
+binh@192.168.1.210 apache_package=apache2 php_package=libapache2-mod-php tmux_package=tmux vim_package=neovim siteFile=default_site.html destination=/var/www/html/index.html
+
+[workstation]
+binh@192.168.1.219 apache_package=apache2 php_package=libapache2-mod-php tmux_package=tmux vim_package=neovim siteFile=default_site.html destination=/var/www/html/index.html

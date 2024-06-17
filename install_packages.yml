@@ -14,3 +14,14 @@
       state: latest
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
+
+- hosts: workstation
+  become: true
+  tasks:
+
+    - name: Install Unzip
+      package: 
+        name: unzip
+
+    - name: Install Terraform
+      command: curl -o /usr/local/bin/terraform.zip https://releases.hashicorp.com/terraform/1.8.5/terraform_1.8.5_linux_arm64.zip
