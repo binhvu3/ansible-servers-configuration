@@ -4,6 +4,7 @@
   become: true
   pre_tasks:
     - name: Install Update
+      tags: always
       package:
         upgrade: dist
         update_cache: yes
@@ -13,6 +14,7 @@
   become: true
   tasks:
   - name: Server 1 -> Install Packages
+    tags: ubuntu,apache,apache2,php,tmux,vim,server1
     package:
       name: 
         - "{{ apache_package }}"
@@ -27,6 +29,7 @@
   become: true
   tasks:
   - name: Server 2 -> Install Packages
+    tags: ubuntu,apache,apache2,php,tmux,vim,server2
     package:
       name: 
         - "{{ apache_package }}"

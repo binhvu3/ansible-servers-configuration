@@ -7,4 +7,5 @@ ansible all -m apt -a update_cache=true --become --ask-become-pass
 ansible all -m apt -a name=neovim --become --ask-become-pass # Install neovim on all server
 ansible all -m apt -a "upgrade=dist" --become --ask-become-pass # Similar to sudo apt dist-upgrade
 
-ansile-playbook --ask-become-pass [playbook.yml] # run custom playbook
+ansible-playbook --ask-become-pass [playbook.yml] # run custom playbook
+ansible-playbook --list-tags [playbook.yml] # Check available tags
