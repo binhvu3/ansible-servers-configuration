@@ -1,7 +1,5 @@
 # Automated Multi-Server Configuration
 
-[Link to Project](#) 
-
 ## Overview
 
 This project showcases the use of Ansible to automate the installation of software and the management of configuration files on multiple Ubuntu servers hosted on VirtualBox. The automation process leverages SSH keys for secure and password-less authentication, streamlining the server setup and configuration.
