@@ -10,6 +10,15 @@
         update_cache: yes
       when: ansible_distribution == "Ubuntu"
 
+- hosts: all
+  become: true
+  tasks:
+    
+    - name: Create Default User
+      tags: always
+      user: 
+        name: John
+        groups: root
 
 - hosts: server1
   become: true
@@ -33,6 +42,7 @@
       regexp: '\b[A-Za-z0-9._%+-]+@gmail\.com\b'
       line: admin@adminmail.com
     when: ansible_distribution == "Ubuntu"
+    register: apache # Save output of this and can be use to restart service
 
 - hosts: server2
   become: true
