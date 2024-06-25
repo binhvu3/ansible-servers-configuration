@@ -19,3 +19,11 @@ This project showcases the use of Ansible to automate the installation of softwa
 - **Automated Software Installation**: Ensures consistent and efficient installation of required software across all servers.
 - **Configuration File Management**: Automated management of configuration files to maintain uniformity and correctness.
 - **Secure Orchestration**: Utilizes SSH keys to manage and orchestrate tasks securely across multiple virtual machines.
+
+## Usage
+```
+ansible-playbook --ask-become-pass [playbook.yml] # run custom playbook
+```
+- install_packages.yml install predetermined applications. 
+- remove_packages.yml removed installed appplications.
+- target_install.yml install diff applications on diff server.
