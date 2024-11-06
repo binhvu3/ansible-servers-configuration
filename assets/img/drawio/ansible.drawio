@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12">
+  <diagram name="Page-1" id="y1A6RCGTtrAThKQPtxaU">
+    <mxGraphModel dx="1687" dy="932" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1024" pageHeight="768" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry y="40" width="1023" height="767" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-8" value="Virtual Box" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.patternFillRect;fillStyle=hatch;step=5;fillStrokeWidth=0.2;fillStrokeColor=#dddddd;fillColor=#f8cecc;strokeColor=#b85450;fontSize=24;fontStyle=0;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="490" y="100" width="390" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-1" value="ANSIBLE" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTI2IDY0YzAgMzQuMi0yNy44IDYyLTYyIDYyUzIgOTguMiAyIDY0IDI5LjggMiA2NCAyczYyIDI3LjggNjIgNjIiIGZpbGw9IiMxQTE5MTgiLz48cGF0aCBkPSJNNjUgMzkuOWwxNiAzOS42LTI0LjEtMTkuMUw2NSAzOS45em0yOC41IDQ4LjdMNjguOSAyOS4yYy0uNy0xLjctMi4xLTIuNi0zLjgtMi42LTEuNyAwLTMuMi45LTMuOSAyLjZMMzQgOTQuM2g5LjNMNTQgNjcuNWwzMiAyNS45YzEuMyAxIDIuMiAxLjUgMy40IDEuNSAyLjQgMCA0LjUtMS44IDQuNS00LjQuMS0uNS0uMS0xLjItLjQtMS45eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==;fontSize=24;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="90" width="230" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-3" value="Ubuntu Server 1" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;fontSize=16;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="632.24" y="120" width="109.95" height="149" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-4" value="Ubuntu Server 2" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;fontSize=16;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="632.24" y="320" width="112.15" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-5" value="Ubuntu Server 3" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;fontSize=16;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="632.24" y="540" width="118.05" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-9" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.998;exitY=0.473;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.022;entryY=0.534;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jpGQAsMqD0ZTp0lZuSL0-16" target="jpGQAsMqD0ZTp0lZuSL0-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="404" y="446" as="sourcePoint" />
+            <mxPoint x="600" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-11" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.007;entryY=0.502;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.005;exitY=0.458;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jpGQAsMqD0ZTp0lZuSL0-16" target="jpGQAsMqD0ZTp0lZuSL0-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="404" y="446" as="sourcePoint" />
+            <mxPoint x="600" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.066;entryY=0.469;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.976;exitY=0.473;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jpGQAsMqD0ZTp0lZuSL0-16" target="jpGQAsMqD0ZTp0lZuSL0-3">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="404" y="446" as="sourcePoint" />
+            <mxPoint x="600" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jpGQAsMqD0ZTp0lZuSL0-16" value="Host Computer" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer_with_Server.svg;direction=east;fontSize=24;imageBackground=none;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="211" y="390" width="160" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
